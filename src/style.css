@@ -454,6 +454,9 @@ body.overview-active .mobile-nav-overview { color:var(--accent); }
 
   /* iframe overlay */
   .iframe-overlay-content { width:95vw; height:85vh; border-radius:8px; }
-  .iframe-overlay-content.mobile { max-width:95vw; border-radius:24px; }
+  .iframe-overlay-content.mobile { max-width:95vw; max-height:85vh; border-radius:8px; border-width:1px; }
+  .iframe-overlay-content.mobile::before { display:none; }
+  .iframe-overlay-content.mobile .overlay-iframe { border-radius:8px; }
+  .iframe-overlay-content.mobile .iframe-close { top:10px; right:10px; }
   .iframe-close { width:28px; height:28px; font-size:.8rem; }
 }
