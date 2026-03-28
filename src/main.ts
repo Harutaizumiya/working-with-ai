@@ -461,9 +461,9 @@ function setupAiTasteToggle() {
     if (!frame || !iframe) return;
     const isMobile = window.innerWidth <= 768;
     if (isMobile) {
-      // Portrait ratio for mobile: render at phone-like width, taller height
+      // Portrait ratio for mobile, leave room for buttons below
       const refW = 430;
-      const refH = 750;
+      const refH = 580;
       const availW = window.innerWidth;
       const scale = availW / refW;
       iframe.style.width = refW + "px";
