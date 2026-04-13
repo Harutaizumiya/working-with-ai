@@ -300,222 +300,6 @@
         </div>
       </section> -->
 
-      <!-- ============================== 4. 工具选择 ============================== -->
-      <section class="slide">
-        <div class="flex-col gap-2" style="align-items:center">
-          <div class="title-large cn">我的 <span class="gradient-text">工具选择</span></div>
-
-          <div class="tool-row mt-2">
-            <div class="tool-row-card" data-f="1">
-              <div class="tool-row-icon"><img src="/icons/codex-color.svg" style="width:32px;height:32px" alt=""></div>
-              <div class="cn"><strong>Codex</strong></div>
-              <div class="cn dim" style="font-size:.82rem">写代码</div>
-            </div>
-            <div class="tool-row-card" data-f="2">
-              <div class="tool-row-icon"><img src="/icons/gemini-ai.svg" style="width:32px;height:32px" alt=""></div>
-              <div class="cn"><strong>Gemini</strong></div>
-              <div class="cn dim" style="font-size:.82rem">创意工作</div>
-            </div>
-            <div class="tool-row-card" data-f="3">
-              <div class="tool-row-icon"><img src="/icons/openai.svg" style="width:32px;height:32px" class="invert" alt=""></div>
-              <div class="cn"><strong>ChatGPT</strong></div>
-              <div class="cn dim" style="font-size:.82rem">Research</div>
-            </div>
-            <div class="tool-row-card" data-f="4">
-              <div class="tool-row-icon"><img src="/icons/playwright.svg" style="width:32px;height:32px" alt=""></div>
-              <div class="cn"><strong>Playwright</strong></div>
-              <div class="cn dim" style="font-size:.82rem">MCP</div>
-            </div>
-          </div>
-
-          <!-- <div class="mt-2" data-f="5">
-            <img src="/codex-config.png" alt="Codex config" class="config-img" style="max-width:500px" />
-          </div>
-
-          <div class="mt-1" data-f="6">
-            <img src="/agent-poll.png" alt="Agent poll" class="config-img" style="max-width:400px" />
-          </div>
-
-          <div class="card mt-1 cn text-center" data-f="7" style="max-width:500px;font-size:1rem">
-            有人说 Codex 太慢了<br>
-            <strong class="accent" style="font-size:1.3rem">靠谱才是真的快</strong>
-          </div> -->
-        </div>
-      </section>
-
-      <!-- ============================== 5. Skills ============================== -->
-      <section class="slide">
-        <div class="flex-col gap-3" style="align-items:center">
-          <div class="title-large cn">什么是 <span class="gradient-text">Skills?</span></div>
-
-          <div class="skills-explain mt-2">
-            <div class="skills-main card" data-f="1">
-              <div class="skills-kicker mono">Definition</div>
-              <div class="cn" style="font-size:1.05rem">
-                Skill 本质上是给 agent 的一份<span class="accent">本地说明书</span>
-              </div>
-              <div class="cn dim mt-1" style="font-size:.86rem">
-                用自然语言写清楚目标、流程、判断标准、输入输出和注意事项，
-                让 agent 在处理某类任务时先按这份说明来做。
-              </div>
-
-              <div class="skill-flow mt-2">
-                <div class="skill-flow-node">任务</div>
-                <div class="skill-flow-arrow">→</div>
-                <div class="skill-flow-node accent-border">读取 Skill</div>
-                <div class="skill-flow-arrow">→</div>
-                <div class="skill-flow-node">按规则执行</div>
-              </div>
-            </div>
-
-            <div class="skills-grid">
-              <div class="skills-side card cn" data-f="2">
-                <div class="skills-kicker mono">Why</div>
-                <div class="skills-side-title">为什么需要它？</div>
-                <div class="dim" style="font-size:.82rem">
-                  把团队经验、领域知识、质量标准沉淀成文本，
-                  不用重新训练模型，也不用每次手写一大段 prompt。
-                </div>
-              </div>
-
-              <div class="skills-side card cn" data-f="3">
-                <div class="skills-kicker mono">Boundary</div>
-                <div class="skills-side-title">它不是什么？</div>
-                <div class="dim" style="font-size:.82rem">
-                  Skill 不负责真正执行外部操作。
-                  它更像“怎么做”的规则；工具或 MCP 才是“去做”的接口。
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-example card" data-f="4">
-            <div class="skills-kicker mono">Example</div>
-            <div class="skills-example-grid">
-              <div class="skills-file mono">
-                <div class="skills-file-line"><span class="accent3">SKILL.md</span></div>
-                <div class="skills-file-line">goal: review PR comments</div>
-                <div class="skills-file-line">steps:</div>
-                <div class="skills-file-line">- read unresolved threads</div>
-                <div class="skills-file-line">- group actionable items</div>
-                <div class="skills-file-line">- patch code before replying</div>
-              </div>
-              <div class="skills-example-copy cn">
-                <div class="skills-side-title">典型内容</div>
-                <div class="dim" style="font-size:.82rem">
-                  任务目标、前置条件、推荐步骤、决策标准、输出格式、常见陷阱。
-                </div>
-                <div class="skills-tags mt-1">
-                  <span class="tool-pill">Goal</span>
-                  <span class="tool-pill">Steps</span>
-                  <span class="tool-pill">Criteria</span>
-                  <span class="tool-pill">Examples</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card cn text-center" data-f="5" style="max-width:700px;font-size:.9rem">
-            <span class="accent">Skill</span> 解决的是“遇到这类任务，应该怎么做”，
-            <span class="accent2">MCP / Tools</span> 解决的是“我现在可以调用什么去做”。<br>
-            <span class="dim" style="font-size:.82rem">一个负责方法论注入，一个负责能力接入。</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================== 6. CLI vs MCP ============================== -->
-      <section class="slide">
-        <div class="flex-col gap-3" style="align-items:center">
-          <div class="title-large cn">CLI vs. <span class="gradient-text">MCP</span></div>
-
-          <div class="versus-visual mt-2">
-            <div class="versus-card" data-f="1">
-              <div class="versus-label">CLI</div>
-              <div class="versus-flow">
-                <span class="versus-node">👤 人 / Agent</span>
-                <span class="versus-edge">→</span>
-                <span class="versus-node">💻 Shell</span>
-                <span class="versus-edge">→</span>
-                <span class="versus-node">🔧 工具</span>
-              </div>
-              <div class="versus-tags cn">
-                <span class="versus-tag">快</span>
-                <span class="versus-tag">可组合</span>
-                <span class="versus-tag">透明可调试</span>
-              </div>
-              <div class="cn dim" style="font-size:.8rem">开发内环 · Agent 通过 shell 直接调用</div>
-            </div>
-
-            <div class="versus-vs" data-f="2">+</div>
-
-            <div class="versus-card accent-border" data-f="2">
-              <div class="versus-label accent">MCP</div>
-              <div class="versus-flow">
-                <span class="versus-node">🤖 模型</span>
-                <span class="versus-edge">→</span>
-                <span class="versus-node">📡 协议</span>
-                <span class="versus-edge">→</span>
-                <span class="versus-node">🔧 工具</span>
-              </div>
-              <div class="versus-tags cn">
-                <span class="versus-tag">可发现</span>
-                <span class="versus-tag">跨客户端</span>
-                <span class="versus-tag">结构化输入输出</span>
-              </div>
-              <div class="cn dim" style="font-size:.8rem">集成外环 · 标准化工具发现与权限管理</div>
-            </div>
-          </div>
-
-          <div class="card mt-2 cn text-center" data-f="3" style="max-width:680px;font-size:.9rem">
-            对 Agent 来说<strong>两者都很有用</strong> — 多数团队最终二者并存<br>
-            <span class="dim">CLI 做底层实现 + 专家入口，MCP 做标准化接口层</span>
-          </div>
-
-          <!-- <div class="card mt-1 cn text-center" data-f="4" style="max-width:680px;font-size:.9rem">
-            <span class="accent3" style="font-size:1.05rem">推荐：<code>gh</code> CLI</span><br>
-            <span class="dim" style="font-size:.85rem">GitHub 官方 CLI — Agent 友好、半结构化输出、可组合</span>
-          </div> -->
-
-          <a href="https://chatgpt.com/share/69c60854-2b64-83aa-b91d-c4ceff5055c6" class="inline-link dim mono mt-1" data-f="5" style="font-size:.75rem" target="_blank" rel="noopener">详细分析 ↗</a>
-        </div>
-      </section>
-
-      <!-- ============================== 7. Workflow ============================== -->
-      <section class="slide">
-        <div class="flex-col gap-2" style="align-items:center">
-          <div class="title-large cn">我的 <span class="gradient-text">Workflow</span></div>
-
-          <div class="workflow-board mt-2">
-            <div class="workflow-row workflow-row-start" data-f="1">
-              <div class="workflow-node"><span class="workflow-node-code mono">01</span><span class="cn">💡 发现需求</span></div>
-              <div class="workflow-link">→</div>
-              <div class="workflow-node workflow-node-wide workflow-node-accent"><span class="workflow-node-code mono">02</span><span class="cn">🤖 GPT 聊天写计划</span></div>
-              <div class="workflow-link">→</div>
-              <div class="workflow-node workflow-node-wide workflow-node-accent"><span class="workflow-node-code mono">03</span><span class="cn">🎨 Stitch 绘制 demo 图</span></div>
-              <div class="workflow-link">→</div>
-              <div class="workflow-node workflow-node-wide workflow-node-accent"><span class="workflow-node-code mono">04</span><span class="cn">💻 Google AI Studio<br>输出原始代码</span></div>
-            </div>
-
-            <div class="workflow-drop workflow-drop-right" data-f="2">↓</div>
-
-            <div class="workflow-row workflow-row-reverse" data-f="2">
-              <div class="workflow-node workflow-node-finish"><span class="workflow-node-code mono">08</span><span class="cn">✅ 最终审核代码提交</span></div>
-              <div class="workflow-link">←</div>
-              <div class="workflow-node workflow-node-wide workflow-node-accent"><span class="workflow-node-code mono">07</span><span class="cn">🔁 根据实际效果不断迭代</span></div>
-              <div class="workflow-link">←</div>
-              <div class="workflow-node workflow-node-wide workflow-node-accent"><span class="workflow-node-code mono">06</span><span class="cn">📝 上下文中注入计划书</span></div>
-              <div class="workflow-link">←</div>
-              <div class="workflow-node workflow-node-accent"><span class="workflow-node-code mono">05</span><span class="cn">🔧 Codex 初始化项目</span></div>
-            </div>
-          </div>
-
-          <div class="card cn text-center" data-f="3" style="max-width:760px;font-size:0.88rem">
-            前四步偏向 <span class="accent">想法成型 + 快速出雏形</span>，
-            后四步交给 <span class="accent2">Codex + 人</span> 一起把 demo 收敛成可交付代码。
-          </div>
-        </div>
-      </section>
-
       <!-- ============================== 8. Research 双模式 ============================== -->
       <section class="slide">
         <div class="flex-col gap-3" style="align-items:center">
@@ -608,6 +392,165 @@
         </div>
       </section>
 
+      <!-- ============================== 5. Skills ============================== -->
+      <section class="slide">
+        <div class="flex-col gap-3" style="align-items:center">
+          <div class="title-large cn">什么是 <span class="gradient-text">Skills?</span></div>
+
+          <div class="skills-explain mt-2">
+            <div class="skills-main card" data-f="1">
+              <div class="skills-kicker mono">Definition</div>
+              <div class="cn" style="font-size:1.05rem">
+                Skill 本质上是给 agent 的一份<span class="accent">本地说明书</span>
+              </div>
+              <div class="cn dim mt-1" style="font-size:.86rem">
+                用自然语言写清楚目标、流程、判断标准、输入输出和注意事项，
+                让 agent 在处理某类任务时先按这份说明来做。
+              </div>
+
+              <div class="skill-flow mt-2">
+                <div class="skill-flow-node">任务</div>
+                <div class="skill-flow-arrow">→</div>
+                <div class="skill-flow-node accent-border">读取 Skill</div>
+                <div class="skill-flow-arrow">→</div>
+                <div class="skill-flow-node">按规则执行</div>
+              </div>
+            </div>
+
+            <div class="skills-grid">
+              <div class="skills-side card cn" data-f="2">
+                <div class="skills-kicker mono">Why</div>
+                <div class="skills-side-title">为什么需要它？</div>
+                <div class="dim" style="font-size:.82rem">
+                  把团队经验、领域知识、质量标准沉淀成文本，
+                  不用重新训练模型，也不用每次手写一大段 prompt。
+                </div>
+              </div>
+
+              <div class="skills-side card cn" data-f="3">
+                <div class="skills-kicker mono">Boundary</div>
+                <div class="skills-side-title">它不是什么？</div>
+                <div class="dim" style="font-size:.82rem">
+                  Skill 不负责真正执行外部操作。
+                  它更像“怎么做”的规则；工具或 MCP 才是“去做”的接口。
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-example card" data-f="4">
+            <div class="skills-kicker mono">Example</div>
+            <div class="skills-example-grid">
+              <div class="skills-file mono">
+                <div class="skills-file-line"><span class="accent3">SKILL.md</span></div>
+                <div class="skills-file-line">goal: review PR comments</div>
+                <div class="skills-file-line">steps:</div>
+                <div class="skills-file-line">- read unresolved threads</div>
+                <div class="skills-file-line">- group actionable items</div>
+                <div class="skills-file-line">- patch code before replying</div>
+              </div>
+              <div class="skills-example-copy cn">
+                <div class="skills-side-title">典型内容</div>
+                <div class="dim" style="font-size:.82rem">
+                  任务目标、前置条件、推荐步骤、决策标准、输出格式、常见陷阱。
+                </div>
+                <div class="skills-tags mt-1">
+                  <span class="tool-pill">Goal</span>
+                  <span class="tool-pill">Steps</span>
+                  <span class="tool-pill">Criteria</span>
+                  <span class="tool-pill">Examples</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card cn text-center" data-f="5" style="max-width:700px;font-size:.9rem">
+            <span class="accent">Skill</span> 解决的是“遇到这类任务，应该怎么做”，
+            <span class="accent2">MCP / Tools</span> 解决的是“我现在可以调用什么去做”。<br>
+            <span class="dim" style="font-size:.82rem">一个负责方法论注入，一个负责能力接入。</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== 4. 工具选择 ============================== -->
+      <section class="slide">
+        <div class="flex-col gap-2" style="align-items:center">
+          <div class="title-large cn">我的 <span class="gradient-text">工具选择</span></div>
+
+          <div class="tool-row mt-2">
+            <div class="tool-row-card" data-f="1">
+              <div class="tool-row-icon"><img src="/icons/codex-color.svg" style="width:32px;height:32px" alt=""></div>
+              <div class="cn"><strong>Codex</strong></div>
+              <div class="cn dim" style="font-size:.82rem">写代码</div>
+            </div>
+            <div class="tool-row-card" data-f="2">
+              <div class="tool-row-icon"><img src="/icons/gemini-ai.svg" style="width:32px;height:32px" alt=""></div>
+              <div class="cn"><strong>Gemini</strong></div>
+              <div class="cn dim" style="font-size:.82rem">创意工作</div>
+            </div>
+            <div class="tool-row-card" data-f="3">
+              <div class="tool-row-icon"><img src="/icons/openai.svg" style="width:32px;height:32px" class="invert" alt=""></div>
+              <div class="cn"><strong>ChatGPT</strong></div>
+              <div class="cn dim" style="font-size:.82rem">Research</div>
+            </div>
+            <div class="tool-row-card" data-f="4">
+              <div class="tool-row-icon"><img src="/icons/playwright.svg" style="width:32px;height:32px" alt=""></div>
+              <div class="cn"><strong>Playwright</strong></div>
+              <div class="cn dim" style="font-size:.82rem">MCP</div>
+            </div>
+          </div>
+
+          <!-- <div class="mt-2" data-f="5">
+            <img src="/codex-config.png" alt="Codex config" class="config-img" style="max-width:500px" />
+          </div>
+
+          <div class="mt-1" data-f="6">
+            <img src="/agent-poll.png" alt="Agent poll" class="config-img" style="max-width:400px" />
+          </div>
+
+          <div class="card mt-1 cn text-center" data-f="7" style="max-width:500px;font-size:1rem">
+            有人说 Codex 太慢了<br>
+            <strong class="accent" style="font-size:1.3rem">靠谱才是真的快</strong>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- ============================== 7. Workflow ============================== -->
+      <section class="slide">
+        <div class="flex-col gap-2" style="align-items:center">
+          <div class="title-large cn">我的 <span class="gradient-text">Workflow</span></div>
+
+          <div class="workflow-board mt-2">
+            <div class="workflow-row workflow-row-start" data-f="1">
+              <div class="workflow-node"><span class="workflow-node-code mono">01</span><span class="cn">💡 发现需求</span></div>
+              <div class="workflow-link">→</div>
+              <div class="workflow-node workflow-node-wide workflow-node-accent"><span class="workflow-node-code mono">02</span><span class="cn">🤖 GPT 聊天写计划</span></div>
+              <div class="workflow-link">→</div>
+              <div class="workflow-node workflow-node-wide workflow-node-accent"><span class="workflow-node-code mono">03</span><span class="cn">🎨 Stitch 绘制 demo 图</span></div>
+              <div class="workflow-link">→</div>
+              <div class="workflow-node workflow-node-wide workflow-node-accent"><span class="workflow-node-code mono">04</span><span class="cn">💻 Google AI Studio<br>输出原始代码</span></div>
+            </div>
+
+            <div class="workflow-drop workflow-drop-right" data-f="2">↓</div>
+
+            <div class="workflow-row workflow-row-reverse" data-f="2">
+              <div class="workflow-node workflow-node-finish"><span class="workflow-node-code mono">08</span><span class="cn">✅ 最终审核代码提交</span></div>
+              <div class="workflow-link">←</div>
+              <div class="workflow-node workflow-node-wide workflow-node-accent"><span class="workflow-node-code mono">07</span><span class="cn">🔁 根据实际效果不断迭代</span></div>
+              <div class="workflow-link">←</div>
+              <div class="workflow-node workflow-node-wide workflow-node-accent"><span class="workflow-node-code mono">06</span><span class="cn">📝 上下文中注入计划书</span></div>
+              <div class="workflow-link">←</div>
+              <div class="workflow-node workflow-node-accent"><span class="workflow-node-code mono">05</span><span class="cn">🔧 Codex 初始化项目</span></div>
+            </div>
+          </div>
+
+          <div class="card cn text-center" data-f="3" style="max-width:760px;font-size:0.88rem">
+            前四步偏向 <span class="accent">想法成型 + 快速出雏形</span>，
+            后四步交给 <span class="accent2">Codex + 人</span> 一起把 demo 收敛成可交付代码。
+          </div>
+        </div>
+      </section>
+
       <!-- ============================== 10. 不只是 Vibe Coding (intro) ============================== -->
       <section class="slide slide-title">
         <div class="bg-grid"></div>
@@ -635,29 +578,6 @@
 
           <div class="showcase-card clickable mt-2" data-f="3" data-url="https://www.doubao.com/code/chat/38421412237084418">
             <div class="showcase-label mono dim">der包</div>
-            <div class="showcase-desc cn">点击预览 ↗</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================== 12. 不只是 Vibe Coding: 会议准备 ============================== -->
-      <section class="slide">
-        <div class="flex-col gap-3" style="align-items:center">
-          <div class="section-badge cn">不只是 Vibe Coding</div>
-          <div class="title-large cn">会议讨论<span class="gradient-text">准备</span></div>
-
-          <div class="cn" data-f="1" style="max-width:560px;font-size:.95rem;text-align:center">
-            Deep Research 调研 → 结合自己的 key observation 和 insight 整理成文档<br>
-            → 丢给 Claude Code 制作<strong class="accent">可交互的讨论材料</strong>
-          </div>
-
-          <div class="cn dim" data-f="2" style="max-width:520px;font-size:.88rem;text-align:center">
-            例：围绕"能不能用 vibe coded 的原型作为设计交付物"这个话题<br>
-            要求 AI 尽量使用直观的可视化方法来呈现
-          </div>
-
-          <div class="showcase-card clickable mt-2" data-f="3" data-url="https://vibe-hand-off.vercel.app/">
-            <div class="showcase-label mono dim">vibe-hand-off.vercel.app</div>
             <div class="showcase-desc cn">点击预览 ↗</div>
           </div>
         </div>
@@ -805,20 +725,20 @@
 
           <div class="gp-cases mt-2">
             <div class="gp-case cn" data-f="3">
-              <div class="gp-case-title">📷 整理相册</div>
-              <div class="dim">Codex · 按日期/人物自动分类</div>
+              <div class="gp-case-title">🩺 身体健康分析</div>
+              <div class="dim">ChatGPT · 通过身体原始数据分析身体健康状况</div>
             </div>
             <div class="gp-case cn" data-f="4">
-              <div class="gp-case-title">📝 帮妻子 refresh 简历</div>
-              <div class="dim">Claude Code</div>
+              <div class="gp-case-title">📝 创建个人简历</div>
+              <div class="dim">ChatGPT · 根据个人信息自动生成简历</div>
             </div>
             <div class="gp-case cn clickable" data-f="5" data-url="https://panyi-2026.justineo.me/pepper" data-mobile="true">
-              <div class="gp-case-title">⚽ 女儿足球赛赛历</div>
-              <div class="dim">Codex · 自动生成 .ics 订阅 ↗</div>
+              <div class="gp-case-title">🦞 私人助理</div>
+              <div class="dim">OpenClaw · 通过聊天自动化执行各种操作</div>
             </div>
             <div class="gp-case cn" data-f="6">
               <div class="gp-case-title">📊 这个 Slides</div>
-              <div class="dim">Claude Code · 多轮 review</div>
+              <div class="dim">Codex · 多轮 review</div>
             </div>
           </div>
         </div>
