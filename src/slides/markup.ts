@@ -456,7 +456,7 @@
               <div class="skills-example-copy cn">
                 <div class="skills-side-title">典型内容</div>
                 <div class="dim" style="font-size:.82rem">
-                  任务目标、前置条件、推荐步骤、决策标准、输出格式、常见陷阱。
+                  任务目标、前置条件、推荐步骤、决策标准、输出格式、常见问题。
                 </div>
                 <div class="skills-tags mt-1">
                   <span class="tool-pill">Goal</span>
@@ -469,9 +469,9 @@
           </div>
 
           <div class="card cn text-center" data-f="5" style="max-width:700px;font-size:.9rem">
-            <span class="accent">Skill</span> 解决的是“遇到这类任务，应该怎么做”，
-            <span class="accent2">MCP / Tools</span> 解决的是“我现在可以调用什么去做”。<br>
-            <span class="dim" style="font-size:.82rem">一个负责方法论注入，一个负责能力接入。</span>
+            <span class="accent">Skill</span> 的作用是“遇到这类任务，应该怎么做”，
+             相当于预编好的prompt<br>
+            <span class="dim" style="font-size:.82rem">节省自己写prompt的时间</span>
           </div>
         </div>
       </section>
@@ -482,20 +482,20 @@
           <div class="title-large cn">我的 <span class="gradient-text">工具选择</span></div>
 
           <div class="tool-row mt-2">
-            <div class="tool-row-card" data-f="1">
-              <div class="tool-row-icon"><img src="/icons/codex-color.svg" style="width:32px;height:32px" alt=""></div>
-              <div class="cn"><strong>Codex</strong></div>
-              <div class="cn dim" style="font-size:.82rem">写代码</div>
+             <div class="tool-row-card" data-f="3">
+              <div class="tool-row-icon"><img src="/icons/openai.svg" style="width:32px;height:32px" class="invert" alt=""></div>
+              <div class="cn"><strong>ChatGPT</strong></div>
+              <div class="cn dim" style="font-size:.82rem">Research</div>
             </div>
             <div class="tool-row-card" data-f="2">
               <div class="tool-row-icon"><img src="/icons/gemini-ai.svg" style="width:32px;height:32px" alt=""></div>
               <div class="cn"><strong>Gemini</strong></div>
               <div class="cn dim" style="font-size:.82rem">创意工作</div>
             </div>
-            <div class="tool-row-card" data-f="3">
-              <div class="tool-row-icon"><img src="/icons/openai.svg" style="width:32px;height:32px" class="invert" alt=""></div>
-              <div class="cn"><strong>ChatGPT</strong></div>
-              <div class="cn dim" style="font-size:.82rem">Research</div>
+            <div class="tool-row-card" data-f="1">
+              <div class="tool-row-icon"><img src="/icons/codex-color.svg" style="width:32px;height:32px" alt=""></div>
+              <div class="cn"><strong>Codex</strong></div>
+              <div class="cn dim" style="font-size:.82rem">写代码</div>
             </div>
             <div class="tool-row-card" data-f="4">
               <div class="tool-row-icon"><img src="/icons/playwright.svg" style="width:32px;height:32px" alt=""></div>
