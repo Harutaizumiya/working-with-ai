@@ -568,16 +568,16 @@
       <section class="slide">
         <div class="flex-col gap-3" style="align-items:center">
           <div class="section-badge cn">不只是 Vibe Coding</div>
-          <div class="title-large cn">设计交互<span class="gradient-text">协作</span></div>
+          <div class="title-large cn">人人都能是<span class="gradient-text">设计师</span></div>
 
           <div class="cn" data-f="1" style="max-width:550px;font-size:.95rem;text-align:center">
-            我们开发的是给 developer 用的工具<br>
-            有些场景<strong class="accent">开发者比设计师更理解需求</strong>
+            我有个很棒的想法，但是我没学过设计<br>
+            让<strong class="accent">AI</strong>帮助你把想法视觉化
           </div>
 
           <div class="cn dim" data-f="2" style="max-width:500px;font-size:.88rem;text-align:center">
-            开发者用 AI 快速出原型 → 和设计师一起看效果 → 迭代<br>
-            交互细节不再靠文字描述和想象
+            开发者用 AI 快速出原型 → 迭代<br>
+            独立开发者不再受限于设计能力，可以专注于实现想法本身
           </div>
 
           <div class="showcase-card clickable mt-2" data-f="3" data-url="https://www.doubao.com/code/chat/38421412237084418">
@@ -600,12 +600,7 @@
 
           <div class="cn dim" data-f="2" style="max-width:500px;font-size:.88rem;text-align:center">
             用 AI 分析项目结构<br>
-            标记重点内容，快速掌握重点，减少阅读成本
-          </div>
-
-          <div class="showcase-card clickable mt-2" data-f="3" data-url="https://v0-plugin-form-optimization.vercel.app/">
-            <div class="showcase-label mono dim">v0-plugin-form-optimization.vercel.app</div>
-            <div class="showcase-desc cn">点击预览 ↗</div>
+            标记重点内容，快速掌握结构，减少阅读成本
           </div>
         </div>
       </section>
